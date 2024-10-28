@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="/assetes/css/style.css" />
   </head>
   <body>
-    <div class="d-flex">
-      <div style="width: 70%">
+    <div class="d-flex row">
+      <div class="col-12 col-md-8">
         <header class="header container">
           <nav class="p-4 w-100" style="height: 30px">
             <div
@@ -57,6 +57,7 @@
                   <span class="text-danger h-auto p-1">3</span>
                   <span class="pulse-ring border-danger"></span>
                 </div>
+                <i class="ri-menu-line d-block d-md-none hamburger" onclick="toggleSidebar()"></i>
               </div>
             </div>
           </nav>
@@ -943,7 +944,7 @@
           </div>
         </div>
       </div>
-      <div class="sidebar">
+      <div class="sidebar col-md-4" id="sidebar">
         <ul
           class="sidebar-nav d-flex gap-2 nav nav-tabs px-4"
           id="sidebar_tabs"
@@ -1107,9 +1108,9 @@
 
                 <div class="card-body pt-0">
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-1.jpg"
+                        src="assetes/images/sideBarProduct/img-1.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1120,7 +1121,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Sunspots
                       </a>
@@ -1131,9 +1132,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-2.jpg"
+                        src="assetes/images/sideBarProduct/img-2.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1144,7 +1145,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Ocean Drive
                       </a>
@@ -1155,9 +1156,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-3.jpg"
+                        src="assetes/images/sideBarProduct/img-3.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1166,7 +1167,7 @@
                     <div class="d-flex flex-column flex-grow-1 pe-3">
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Soar, Eco
                       </a>
@@ -1177,9 +1178,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-5.jpg"
+                        src="assetes/images/sideBarProduct/img-5.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1190,7 +1191,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Cup &amp; Green
                       </a>
@@ -1203,7 +1204,7 @@
                   <div class="d-flex flex-wrap align-items-center">
                     <div class="symbol symbol-40px symbol-2by3 me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-6.jpg"
+                        src="assetes/images/sideBarProduct/img-6.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1214,7 +1215,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Bose QC 35 II
                       </a>
@@ -1280,9 +1281,9 @@
 
                 <div class="card-body pt-0">
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-7.jpg"
+                        src="assetes/images/sideBarProduct/img-7.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1293,7 +1294,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         BP Industries
                       </a>
@@ -1304,9 +1305,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-8.jpg"
+                        src="assetes/images/sideBarProduct/img-8.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1317,7 +1318,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Automatica
                       </a>
@@ -1328,9 +1329,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-9.jpg"
+                        src="assetes/images/sideBarProduct/img-9.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1339,7 +1340,7 @@
                     <div class="d-flex flex-column flex-grow-1 pe-3">
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Python Inc.
                       </a>
@@ -1350,9 +1351,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-19.jpg"
+                        src="assetes/images/sideBarProduct/img-19.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1363,7 +1364,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Cup &amp; Green
                       </a>
@@ -1374,9 +1375,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-6.jpg"
+                        src="assetes/images/sideBarProduct/img-6.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1387,7 +1388,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Active Customers
                       </a>
@@ -1447,9 +1448,9 @@
 
                 <div class="card-body pt-0">
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-17.jpg"
+                        src="assetes/images/sideBarProduct/img-17.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1460,7 +1461,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Blue Donut
                       </a>
@@ -1471,9 +1472,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-10.jpg"
+                        src="assetes/images/sideBarProduct/img-10.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1484,7 +1485,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Lovely Hearts
                       </a>
@@ -1495,9 +1496,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-1.jpg"
+                        src="assetes/images/sideBarProduct/img-1.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1506,7 +1507,7 @@
                     <div class="d-flex flex-column flex-grow-1 pe-3">
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Hands &amp; Yellow
                       </a>
@@ -1517,9 +1518,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-9.jpg"
+                        src="assetes/images/sideBarProduct/img-9.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1530,7 +1531,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Cup &amp; Green
                       </a>
@@ -1541,9 +1542,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-4.jpg"
+                        src="assetes/images/sideBarProduct/img-4.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1554,7 +1555,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Bose QC 35 II
                       </a>
@@ -1620,9 +1621,9 @@
 
                 <div class="card-body pt-0">
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-8.jpg"
+                        src="assetes/images/sideBarProduct/img-8.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1633,7 +1634,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Automatica
                       </a>
@@ -1644,9 +1645,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-11.jpg"
+                        src="assetes/images/sideBarProduct/img-11.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1657,7 +1658,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         BP Industries
                       </a>
@@ -1668,9 +1669,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-19.jpg"
+                        src="assetes/images/sideBarProduct/img-19.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1681,7 +1682,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Cup &amp; Green
                       </a>
@@ -1692,9 +1693,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-9.jpg"
+                        src="assetes/images/sideBarProduct/img-9.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1703,7 +1704,7 @@
                     <div class="d-flex flex-column flex-grow-1 pe-3">
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Python Inc.
                       </a>
@@ -1714,9 +1715,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-6.jpg"
+                        src="assetes/images/sideBarProduct/img-6.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1727,7 +1728,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Active Customers
                       </a>
@@ -1793,9 +1794,9 @@
 
                 <div class="card-body pt-0">
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-12.jpg"
+                        src="assetes/images/sideBarProduct/img-12.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1806,7 +1807,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Top Authors
                       </a>
@@ -1817,9 +1818,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-13.jpg"
+                        src="assetes/images/sideBarProduct/img-13.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1830,7 +1831,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Popular Authors
                       </a>
@@ -1841,9 +1842,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-14.jpg"
+                        src="assetes/images/sideBarProduct/img-14.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1852,7 +1853,7 @@
                     <div class="d-flex flex-column flex-grow-1 pe-3">
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         New Users
                       </a>
@@ -1863,9 +1864,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center mb-7">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-15.jpg"
+                        src="assetes/images/sideBarProduct/img-15.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1876,7 +1877,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Active Customers
                       </a>
@@ -1887,9 +1888,9 @@
                   </div>
 
                   <div class="d-flex flex-wrap align-items-center">
-                    <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <div class="symbol me-4">
                       <img
-                        src="/start/assets/media/stock/600x400/img-16.jpg"
+                        src="assetes/images/sideBarProduct/img-16.jpg"
                         alt=""
                         class="mw-100"
                       />
@@ -1900,7 +1901,7 @@
                     >
                       <a
                         href="#"
-                        class="text-white fw-bold text-hover-primary fs-6"
+                        class="text-white fw-bold primary-text-hover fs-6"
                       >
                         Bose QC 35 II
                       </a>
@@ -1915,8 +1916,8 @@
           </div>
         </div>
 
-        <div class="pt-5 px-4 pb-4 fs-3 fw-bold">
-          <button class="btn btn-secondary w-100 p-3">
+        <div class="pt-5 px-4 pb-4 fs-3 ">
+          <button class="btn btn-secondary w-100 p-3 fw-bolder">
             View Extended Layout
           </button>
         </div>
@@ -1941,5 +1942,10 @@
     <script src="assetes/appexCharts/sideBar/KanbaChart.js"></script>
     <script src="assetes/appexCharts/sideBar/TowerChart.js"></script>
     <script src="assetes/appexCharts/sideBar/TrevaChart.js"></script>
+
+
+
+    <!-- Main js file -->
+     <script src="assetes/js/style.js"></script>
   </body>
 </html>

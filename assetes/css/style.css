@@ -10,6 +10,9 @@ body, html {
     background-color: #FBF9F6;
 }
 
+a{
+    text-decoration: none;
+}
 
 .header{
     display: flex;
@@ -70,6 +73,12 @@ body, html {
         opacity: 0;
     }
 }
+
+.w-70{
+    width: 70%;
+}
+
+
 
 .btn-primary{
     background-color: #67D48A;
@@ -151,6 +160,8 @@ body, html {
     height: 100vh;
     background-color: #5710B2;
     justify-self: end;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
 }
 
 .sidebar .sidebar-nav {
@@ -216,6 +227,14 @@ body, html {
     background-color: transparent;
 }
 
+.sidebar.hidden {
+    transform: translateX(100%); 
+}
+
+.sidebar:not(.hidden){
+    transform: translate(0%);
+}
+
 .btn-info{
     color: white;
     background-color: transparent;
@@ -236,4 +255,13 @@ body, html {
     scrollbar-width: thin;
     scrollbar-color: white transparent; 
     border-radius:1rem; 
+}
+
+
+.sidebar-main .symbol img{
+    border-radius: 10px;
+}
+
+.primary-text-hover:hover{
+    color: #20d489 !important;
 }
