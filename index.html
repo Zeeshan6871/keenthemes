@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assetes/css/style.css" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <div style="width: 70%">
+        <header class="header container">
+          <nav class="p-4 w-100" style="height: 30px">
+            <div
+              class="d-flex align-items-center justify-content-between px-4"
+              style="height: 100%"
+            >
+              <div class="d-flex">
+                <div class="btn menu-btn">
+                  <i class="ri-grid-fill"></i>
+                </div>
+                <div>
+                  <img
+                    src="https://preview.keenthemes.com/start/assets/media/logos/logo-default.svg"
+                    alt="logo"
+                    style="height: 40px"
+                  />
+                </div>
+              </div>
+              <div class="d-flex gap-4 fs-5">
+                <i class="ri-search-line"></i>
+                <i class="ri-message-line"></i>
+                <i class="ri-user-line"></i>
+                <div class="position-relative">
+                  <span class="text-danger h-auto p-1">3</span>
+                  <span class="pulse-ring border-danger"></span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="row p-5 h-100">
+            <div class="col-xl-4 col d-flex">
+              <div class="card mb-5 mb-xxl-8 flex-fill">
+                <div class="card-body h-100 pb-0 d-flex flex-column justify-content-between">
+                  <h3 class="text-gray-900 text-center fs-3 fw-bold pt-5 lh-lg">
+                    Kickstart<br />
+                    Mobile Application
+                  </h3>
+                  <div class="text-center pt-7">
+                    <a href="#" class="btn btn-primary fw-bold fs-6 px-7 py-3">Create App</a>
+                  </div>
+                  <img src="https://preview.keenthemes.com/start/assets/media/illustrations/sigma-1/3.png" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8 col d-flex">
+              <div class="card mb-5 mb-xxl-8 flex-fill">
+                <div class="card-header d-flex justify-content-between border-0 pt-5 px-5">
+                  <h3 class="card-title d-flex align-items-start flex-column">
+                    <span class="card-label fw-bold text-gray-900 fs-5"
+                      >Campaign Leaders</span
+                    >
+                    <span class="text-muted mt-2 fw-semibold fs-6"
+                      >890,344 Sales</span
+                    >
+                  </h3>
+                  <div class="card-toolbar">
+                    <ul class="nav nav-pills nav-pills-sm" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link py-2 px-4 active fw-bold me-2"
+                          data-bs-toggle="tab"
+                          href="#dayTab"
+                          aria-selected="true"
+                          role="tab"
+                          >Day</a
+                        >
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link btn btn-active-light btn-color-muted py-2 px-4 fw-bold me-2"
+                          data-bs-toggle="tab"
+                          href="#weekTab"
+                          aria-selected="false"
+                          tabindex="-1"
+                          role="tab"
+                          >Week</a
+                        >
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link btn btn-active-light btn-color-muted py-2 px-4 fw-bold"
+                          data-bs-toggle="tab"
+                          href="#monthTab"
+                          aria-selected="false"
+                          tabindex="-1"
+                          role="tab"
+                          >Month</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body h-100 pt-2 pb-0 d-flex flex-column">
+                  <div class="tab-content mt-5" id="myTabTables1">
+                    <div
+                      class="tab-pane fade show active"
+                      id="dayTab"
+                      role="tabpanel"
+                      aria-labelledby="dayTab"
+                    >
+                      <div class="table-responsive">
+                        <table class="table table-borderless align-middle">
+                          <thead>
+                            <tr>
+                              <th class="p-0 w-50px"></th>
+                              <th class="p-0 min-w-200px"></th>
+                              <th class="p-0 min-w-100px"></th>
+                              <th class="p-0 min-w-40px"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Top Authors</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div class="progress h-6px w-100">
+                                      <div
+                                        class="progress-bar bg-primary"
+                                        role="progressbar"
+                                        style="width: 46%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      46%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-dashboard-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  href="#"
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Popular Authors</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML, VueJS, Laravel</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-warning"
+                                    >
+                                      <div
+                                        class="progress-bar bg-warning"
+                                        role="progressbar"
+                                        style="width: 87%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      87%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-hexagon-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  href="#"
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >New Products</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-success"
+                                    >
+                                      <div
+                                        class="progress-bar bg-success"
+                                        role="progressbar"
+                                        style="width: 53%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      53%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-stack-fill"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  href="#"
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Weekly Bestsellers</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-danger"
+                                    >
+                                      <div
+                                        class="progress-bar bg-danger"
+                                        role="progressbar"
+                                        style="width: 92%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      92%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div
+                      class="tab-pane fade"
+                      id="weekTab"
+                      role="tabpanel"
+                      aria-labelledby="weekTab"
+                    >
+                      <div class="table-responsive">
+                        <table class="table table-borderless align-middle">
+                          <thead>
+                            <tr>
+                              <th class="p-0 w-50px"></th>
+                              <th class="p-0 min-w-200px"></th>
+                              <th class="p-0 min-w-100px"></th>
+                              <th class="p-0 min-w-40px"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >New Users</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-success"
+                                    >
+                                      <div
+                                        class="progress-bar bg-success"
+                                        role="progressbar"
+                                        style="width: 53%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      53%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Weekly Bestsellers</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-danger"
+                                    >
+                                      <div
+                                        class="progress-bar bg-danger"
+                                        role="progressbar"
+                                        style="width: 92%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      92%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Top Authors</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-primary"
+                                    >
+                                      <div
+                                        class="progress-bar bg-primary"
+                                        role="progressbar"
+                                        style="width: 46%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      46%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Popular Authors</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-warning"
+                                    >
+                                      <div
+                                        class="progress-bar bg-warning"
+                                        role="progressbar"
+                                        style="width: 87%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      87%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="monthTab"
+                      role="tabpanel"
+                      aria-labelledby="monthTab"
+                    >
+                      <div class="table-responsive">
+                        <table class="table table-borderless align-middle">
+                          <thead>
+                            <tr>
+                              <th class="p-0 w-50px"></th>
+                              <th class="p-0 min-w-200px"></th>
+                              <th class="p-0 min-w-100px"></th>
+                              <th class="p-0 min-w-40px"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Popular Authors</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-warning"
+                                    >
+                                      <div
+                                        class="progress-bar bg-warning"
+                                        role="progressbar"
+                                        style="width: 87%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      87%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >New Users</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-success"
+                                    >
+                                      <div
+                                        class="progress-bar bg-success"
+                                        role="progressbar"
+                                        style="width: 53%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      53%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Top Authors</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-primary"
+                                    >
+                                      <div
+                                        class="progress-bar bg-primary"
+                                        role="progressbar"
+                                        style="width: 46%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      46%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th
+                                class="d-flex align-items-center justify-content-center text-center"
+                              >
+                                <div class="symbol text-center fs-4">
+                                  <span
+                                    class="symbol-label text-center bg-light-primary"
+                                  >
+                                    <i class="ri-message-line"></i>
+                                  </span>
+                                </div>
+                              </th>
+                              <td class="ps-0">
+                                <span
+                                  class="text-gray-800 fw-bold text-hover fs-6 lh-base cursor-pointer"
+                                  >Weekly Bestsellers</span
+                                >
+                                <span
+                                  class="text-muted fw-semibold d-block mt-1"
+                                  >HTML/CSS/JS, Python</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex flex-column w-100 me-3">
+                                  <div class="d-flex flex-stack mb-2">
+                                    <span
+                                      class="text-gray-900 me-2 fs-6 fw-bold"
+                                    >
+                                      Progress
+                                    </span>
+                                  </div>
+                                  <div class="d-flex align-items-center">
+                                    <div
+                                      class="progress h-6px w-100 bg-light-danger"
+                                    >
+                                      <div
+                                        class="progress-bar bg-danger"
+                                        role="progressbar"
+                                        style="width: 92%"
+                                        aria-valuenow="50"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      ></div>
+                                    </div>
+                                    <span
+                                      class="text-muted fs-7 fw-semibold ps-3"
+                                    >
+                                      92%
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="text-end pe-0">
+                                <a
+                                  href="#"
+                                  class="btn btn-icon btn-bg-light btn-active-primary btn-sm fs-4"
+                                >
+                                  <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                     
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="sidebar">
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>  
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 13px !important;
+    font-weight: 400;
+    font-family: Inter, Helvetica, sans-serif;
+    background-color: #FBF9F6;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 120px;
+}
+
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: #BDE9CB;
+    margin-right: 3rem;
+    height:fit-content;
+    padding:3px 3px;
+    font-size: large;
+}
+
+.menu-btn i {
+    color: #20d489;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    background-color: #5710B2;
+    justify-self: end;
+}
+
+
+.pulse-ring {
+    display: block;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: -8px;
+    right: -11px;
+    animation: animation-pulse 3.5s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+@keyframes animation-pulse{
+    0% {
+        -webkit-transform: scale(.1, .1);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: scale(.1, .1);
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0;
+    }
+}
+
+.btn-primary{
+    background-color: #67D48A;
+    border: #67D48A;
+}
+.btn-primary:hover{
+    background-color: #2dc083;
+    border: #2dc083 ;
+}
+
+.btn-active-primary:hover{
+    background-color: #2dc083;
+    color: white;
+}
+
+.text-hover:hover{
+    color: #20d489;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.symbol{
+    width: 65px;
+    height: 65px;
+}
+
+.symbol-label {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.bg-light-primary {
+    background-color:#20d489 ;
+}
+
+.card{
+    border: 1px solid rgb(236, 235, 235);
+}
+
+.nav-link{
+    color: grey;
+}
+.nav-link:hover{
+    color: black;
+}
+
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: #F9F9F9;
+}
+
+.card-header{
+    background-color: white;
+}
+
+.h-6px{
+    height: 6px;
+}
