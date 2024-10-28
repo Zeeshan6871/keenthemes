@@ -35,17 +35,6 @@ body, html {
     color: #20d489;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100vh;
-    background-color: #5710B2;
-    justify-self: end;
-}
 
 
 .pulse-ring {
@@ -91,6 +80,15 @@ body, html {
     border: #2dc083 ;
 }
 
+.btn-secondary{
+    background-color: #6625BA;
+    border: #6625BA;
+}
+.btn-secondary:hover{
+    background-color: #8441db;
+    border: #6625BA;
+}
+
 .btn-active-primary:hover{
     background-color: #2dc083;
     color: white;
@@ -121,7 +119,7 @@ body, html {
     background-color:#20d489 ;
 }
 
-.card{
+.container .card{
     border: 1px solid rgb(236, 235, 235);
 }
 
@@ -139,10 +137,103 @@ body, html {
     background-color: #F9F9F9;
 }
 
-.card-header{
-    background-color: white;
-}
 
 .h-6px{
     height: 6px;
+}
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    background-color: #5710B2;
+    justify-self: end;
+}
+
+.sidebar .sidebar-nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 0;
+    overflow: auto;
+    flex-wrap: nowrap;
+    height: 30%;
+}
+
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-nav .nav-link.active {
+    background-color: #20d489  ;
+    border: 0px;
+}
+
+.sidebar-nav .nav-link{
+    background-color: #4F0CA4;
+    border-radius: 10px;
+    border: none;
+}
+.sidebar-nav .nav-link:hover{
+    border: none;
+}
+
+.sidebar-nav .nav-link img.default {
+    display: block; 
+}
+
+.sidebar-nav .nav-link img.active {
+    display: none; 
+}
+
+.sidebar-nav .nav-link.active img.default {
+    display: none;
+}
+
+.sidebar-nav .nav-link.active img.active {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar-nav .nav-link img {
+    max-width: 100%; 
+    height: 100%; 
+}
+
+
+.sidebar .card{
+    border: none;
+}
+
+.sidebar .card-header{
+    display: flex ;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.btn-info{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+}
+.btn-info:hover{
+    background-color: #4F0CA4;
+    color: white;
+}
+
+
+
+.sidebar-main {
+    height: 70%;
+    overflow: scroll;
+    overflow-x:hidden;
+    scrollbar-width: thin;
+    scrollbar-color: white transparent; 
+    border-radius:1rem; 
 }
