@@ -14,6 +14,24 @@ a{
     text-decoration: none;
 }
 
+.bg-light-green{
+    background-color: #E4FEF4 !important;
+    color: #6AD68E !important;
+}
+
+.bg-light-yellow{
+    background-color: #FDF8DD !important;
+    color: #F3C60C !important;
+}
+.bg-light-blue{
+    background-color: #F1FAFF !important;
+    color: #5BB3FF !important;
+}
+.bg-light-red{
+    background-color: #FCEFF3 !important;
+    color: #E73F6B !important;
+}
+
 .header{
     display: flex;
     justify-content: center;
@@ -227,11 +245,11 @@ a{
     background-color: transparent;
 }
 
-.sidebar.hidden {
+.sidebar.hidden1 {
     transform: translateX(100%); 
 }
 
-.sidebar:not(.hidden){
+.sidebar:not(.hidden1){
     transform: translate(0%);
 }
 
@@ -264,4 +282,14 @@ a{
 
 .primary-text-hover:hover{
     color: #20d489 !important;
+}
+
+.menu-link{
+    color: gray !important;
+    width:100%;
+}
+
+.menu-item{
+    margin: 20px 5px;
+    padding: 10;
 }
