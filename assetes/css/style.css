@@ -37,7 +37,7 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 120px;
+    height: 100px;
 }
 
 
@@ -64,8 +64,8 @@ a{
     height: 40px;
     width: 40px;
     position: absolute;
-    top: -8px;
-    right: -11px;
+    top: -4px;
+    right: -6px;
     animation: animation-pulse 3.5s ease-out;
     animation-iteration-count: infinite;
     opacity: 0;
@@ -96,6 +96,10 @@ a{
     width: 70%;
 }
 
+
+.w-40{
+    width: 40% !important;
+}
 
 
 .btn-primary{
@@ -146,7 +150,7 @@ a{
     background-color:#20d489 ;
 }
 
-.container .card{
+.mainPage .card{
     border: 1px solid rgb(236, 235, 235);
 }
 
@@ -174,7 +178,6 @@ a{
     right: 0px;
     display: flex;
     flex-direction: column;
-    width: 30%;
     height: 100vh;
     background-color: #5710B2;
     justify-self: end;
@@ -211,32 +214,39 @@ a{
     border: none;
 }
 
-.sidebar-nav .nav-link img.default {
+.nav-link img.default {
     display: block; 
 }
 
-.sidebar-nav .nav-link img.active {
+.nav-link img.active {
     display: none; 
 }
 
-.sidebar-nav .nav-link.active img.default {
+.nav-link.active img.default {
     display: none;
 }
 
-.sidebar-nav .nav-link.active img.active {
+.nav-link.active img.active {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.sidebar-nav .nav-link img {
+.nav-link img {
     max-width: 100%; 
     height: 100%; 
 }
 
+.nav-icon{
+    width: 25px;
+}
 
 .sidebar .card{
     border: none;
+}
+
+.card-header{
+    background-color: transparent;
 }
 
 .sidebar .card-header{
@@ -292,4 +302,40 @@ a{
 .menu-item{
     margin: 20px 5px;
     padding: 10;
+}
+
+
+/* Modal css */
+.modal.left .modal-dialog {
+	position:fixed;
+	right: 0;
+	margin: auto;
+	width: 320px;
+    z-index: 2000px !important;
+	height: 100%;
+	-webkit-transform: translate3d(0%, 0, 0);
+	-ms-transform: translate3d(0%, 0, 0);
+	-o-transform: translate3d(0%, 0, 0);
+	transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.modal.right .modal-body {
+	padding: 15px 15px 80px;
+}
+
+.modal.right.fade .modal-dialog {
+	left: -320px;
+	-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+	-moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+	-o-transition: opacity 0.3s linear, left 0.3s ease-out;
+	transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+	right: 0;
 }

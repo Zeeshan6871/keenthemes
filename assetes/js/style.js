@@ -41,3 +41,6 @@ document.querySelectorAll('.dropdown-menu .dropdown-toggle').forEach(item => {
         event.stopPropagation();
     });
 });
+
+
+
