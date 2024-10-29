@@ -946,22 +946,89 @@
           </div>
 
           <div class="row px-5 h-100">
-            <div class="col-xl-4 col d-flex">
-              <div class="card card-stretch mb-5 mb-xxl-8 ">
-                <div class="card-header align-items-center border-0 mt-3">
+            <div class="col-12 col-xl-4 d-flex">
+              <div class="card card-stretch mb-5 mb-xxl-8">
+                <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
                   <h3 class="card-title d-flex align-items-start flex-column">
                     <span class="fw-bold text-gray-900 fs-4">Sales Share</span>
                     <span class="text-muted mt-2 fw-semibold fs-6"
                       >890,344 Sales</span
                     >
                   </h3>
-                  <div class="card-toolbar">
+                  <div class="card-toolbar dropdown">
                     <button
                       type="button"
-                      class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary"
-                      data-kt-menu-trigger="click"
-                      data-kt-menu-placement="bottom-end"
-                    ></button>
+                      class="btn btn-md btn-icon bg-light-green  btn-info"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="ri-apps-line"></i>
+                    </button>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-end rounded fs-6"
+                      style="
+                        width: 200px;
+                        height: auto;
+                        max-height: 400px;
+                        overflow-y: auto;
+                      "
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <div class="dropdown-header px-3">
+                        <h6 class="fs-6 text-gray-900 fw-bold mb-0">Manage</h6>
+                      </div>
+
+                      <div class="separator mb-2 opacity-75"></div>
+
+                      <div class="menu-item px-3">
+                        <a href="#" class="menu-link">Add User</a>
+                      </div>
+
+                      <div class="menu-item px-3">
+                        <a href="#" class="menu-link">Add Role</a>
+                      </div>
+
+                      <div class="menu-item px-3 dropdown">
+                        <a
+                          href="#"
+                          class="menu-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="menu-title">Add Group</span>
+                          <span class="menu-arrow"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-start py-2">
+                          <div class="menu-item px-3">
+                            <a href="#" class="menu-link">Admin Group</a>
+                          </div>
+                          <div class="menu-item px-3">
+                            <a href="#" class="menu-link">Staff Group</a>
+                          </div>
+                          <div class="menu-item px-3">
+                            <a href="#" class="menu-link">Member Group</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="menu-item px-3">
+                        <a href="#" class="menu-link">Reports</a>
+                      </div>
+
+                      <div class="separator my-2 opacity-75"></div>
+
+                      <div class="menu-item px-3">
+                        <div class="py-2">
+                          <a
+                            class="btn btn-primary fw-semibold btn-sm p-2"
+                            href="#"
+                            >Create New</a
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -1013,14 +1080,87 @@
             <div class="col-xl-8 col">
 
               <div class="card card-stretch mb-5 mb-xxl-8">
-                <div class="card-header d-flex align-items-center border-0 mt-3">
-                  <h3 class="card-title d-flex align-items-start flex-column">
+                <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
+                  <h3 class="card-title d-flex  align-items-start flex-column">
                     <span class="fw-bold text-gray-900 fs-4">Milestones</span>
                     <span class="text-muted mt-2 fw-semibold fs-6"
                       >890,344 Sales</span
                     >
                   </h3>
-                  <div class="card-toolbar">
+                  <div class="card-toolbar dropdown">
+                    <button
+                      type="button"
+                      class="btn btn-md btn-icon bg-light-green  btn-info"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="ri-apps-line"></i>
+                    </button>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-end rounded fs-6"
+                      style="
+                        width: 200px;
+                        height: auto;
+                        max-height: 400px;
+                        overflow-y: auto;
+                      "
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <div class="dropdown-header px-3">
+                        <h6 class="fs-6 text-gray-900 fw-bold mb-0">Manage</h6>
+                      </div>
+
+                      <div class="separator mb-2 opacity-75"></div>
+
+                      <div class="menu-item px-3">
+                        <a href="#" class="menu-link">Add User</a>
+                      </div>
+
+                      <div class="menu-item px-3">
+                        <a href="#" class="menu-link">Add Role</a>
+                      </div>
+
+                      <div class="menu-item px-3 dropdown">
+                        <a
+                          href="#"
+                          class="menu-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="menu-title">Add Group</span>
+                          <span class="menu-arrow"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-start py-2">
+                          <div class="menu-item px-3">
+                            <a href="#" class="menu-link">Admin Group</a>
+                          </div>
+                          <div class="menu-item px-3">
+                            <a href="#" class="menu-link">Staff Group</a>
+                          </div>
+                          <div class="menu-item px-3">
+                            <a href="#" class="menu-link">Member Group</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="menu-item px-3">
+                        <a href="#" class="menu-link">Reports</a>
+                      </div>
+
+                      <div class="separator my-2 opacity-75"></div>
+
+                      <div class="menu-item px-3">
+                        <div class="py-2">
+                          <a
+                            class="btn btn-primary fw-semibold btn-sm p-2"
+                            href="#"
+                            >Create New</a
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card-body pt-0">
