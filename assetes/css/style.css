@@ -199,6 +199,7 @@ a {
     top: 0;
     right: 0;
     display: flex;
+    z-index: 5;
     flex-direction: column;
     height: 100vh !important;
     background-color: var(--color-purple);
@@ -326,31 +327,29 @@ a {
     padding: 10px;
 }
 
-/* Modal css */
-.modal.left .modal-dialog {
-    position: fixed;
-    right: 0;
-    margin: auto;
-    width: 320px;
-    z-index: 2000 !important;
-    height: 100%;
-    transform: translate3d(0%, 0, 0);
+.toolbar{
+    transform: rotate(90deg);
+    right: 22%;
+    margin-top: 0%;
+}
+.toolbar-sm{
+    transform: rotate(90deg);
+    right: -8%;
+    margin-top: -13%;
 }
 
-.modal.left .modal-content {
-    height: 100%;
-    overflow-y: auto;
+.explore-body{
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: lightgrey transparent;
 }
 
-.modal.right .modal-body {
-    padding: 15px 15px 80px;
+.btn-explore{
+    background-color: #5BB3FF;
+    color: white;
 }
-
-.modal.right.fade .modal-dialog {
-    left: -320px;
-    transition: opacity 0.3s linear, left var(--transition-duration) ease-out;
-}
-
-.modal.right.fade.show .modal-dialog {
-    right: 0;
+.btn-explore:hover{
+    background-color: #449ce9;
+    color: white;
 }
