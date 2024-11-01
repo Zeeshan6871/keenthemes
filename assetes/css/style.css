@@ -353,3 +353,21 @@ a {
     background-color: #449ce9;
     color: white;
 }
+
+.pro{
+    background-color: #20d489;
+    color: white;
+}
+
+.dashed-btn{
+    border:  1px dashed rgb(180, 179, 179);
+}
+
+.dashed-btn.active{
+    border: 1px dashed #2dc083;
+    background: #e7f2eb;
+}
+
+.dropdown-header{
+    color: black;
+}
