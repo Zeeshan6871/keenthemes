@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/assetes/css/style.css" />
   </head>
   <body>
-    <div class="row">
+    <div class="row w-100">
       <div class="col-12 col-md-8">
         <header class="header w-100 container">
           <nav class="px-4 w-100" style="height: 30px">
@@ -50,7 +50,9 @@
                 </div>
               </div>
               <div class="d-flex gap-4 fs-5">
-                <i class="ri-search-line cursor-pointer"></i>
+                <i class="ri-search-line cursor-pointer"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#topSearchOffCanvas" aria-controls="topSearchOffCanvas">
+                </i>
                 <i class="ri-message-line cursor-pointer"></i>
                 <i class="ri-user-line cursor-pointer"></i>
                 <div
@@ -3049,7 +3051,6 @@
                         class="mw-100"
                       />
                     </div>
-
                     <div
                       class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3"
                     >
@@ -3206,7 +3207,7 @@
         
 
        
-        <div class="card-body" id="kt_explore_body">
+        <div class="card-body">
           
           <div
             class="explore-body p-4"
@@ -3363,21 +3364,133 @@
       id="offcanvasHelp"
       aria-labelledby="offcanvasWithBothOptionsLabel"
     >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-          Backdroped with scrolling
-        </h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <p>Try scrolling the rest of the page to see this option in action.</p>
-      </div>
+    <div class="card shadow-none rounded-0 w-100">
+      <div class="card-header border-0 border-bottom p-4 d-flex justify-content-between">
+          <h5 class="card-title fw-semibold text-black-50">
+            Learn &amp; Get Inspired
+          </h5>
+          <div class="card-toolbar">
+            <button
+              type="button"
+              class="btn btn-close btn-sm btn-icon explore-btn-dismiss me-n5"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+            </button>
+          </div>
+        </div>
+  
+        <div class="card-body">
+          
+          <div
+            class="explore-body p-4"
+            style="height: 580px"
+          >
+           
+            <div
+              class="rounded p-4 mb-5"
+              style="border: 1px dashed lightgray !important;"
+            >
+           
+              
+              <h2 class="fw-bold fs-4 mb-5">Support at <a href="https://devs.keenthemes.com" style="color: #20D489;">devs.keenthemes.com</a></h2>
+             
+              <div class="fs-5 fw-semibold mb-5">
+                <span class="text-gray-500">Join our developers community to find answer to your question and help others.</span>
+                <a class="explore-link d-none" href="https://keenthemes.com/licensing">FAQs</a>
+              </div>
+              
+              <a href="https://devs.keenthemes.com" class="btn btn-lg btn-explore w-100 py-3">Get Support</a>
+             
+           
+            </div>
+
+            <div class="mb-0">
+
+              <div class="d-flex align-content-between justify-content-between flex-stack mb-5">
+
+                <h3 class="fw-bold  me-2 mb-0">
+                  Related Products
+                </h3>
+                <a
+                  href="https://keenthemes.com"
+                  target="_black"
+                  class="fs-6 fw-semibold explore-link"
+                >
+                  All Products
+                </a>
+              </div>
+
+              <div class="mb-0">
+                <a
+                  href="https://keenthemes.com/products/start-html-pro"
+                  class="btn btn-flex dashed-btn w-100 flex-stack active d-flex justify-content-between  align-items-center p-4 mb-4"
+                >
+                <div class="d-flex flex-column align-items-start">
+                      <h3 class="fs-6 fw-semibold mb-0">
+                        Start HTML Pro
+                      </h3>
+                      <div class="text-black-50 fs-7 fw-semibold">
+                        HTML5, CSS3, JS, Bootstrap 5
+                      </div>
+                    </div>
+                  <span class="badge badge-inline pro py-2">
+                    Pro
+                  </span>
+                </a>
+                <a
+                  href="https://keenthemes.com/products/start-html-pro"
+                  class="btn btn-flex dashed-btn w-100 flex-stack d-flex justify-content-between  align-items-center p-4 mb-4"
+                >
+                <div class="d-flex flex-column align-items-start">
+                      <h3 class="fs-6 fw-semibold mb-0">
+                        Start Vue Pro
+                      </h3>
+                      <div class="text-black-50 fs-7 fw-semibold">
+                        VueJS 3, Typescript, Bootstrap 5
+                      </div>
+                    </div>
+                  <span class="badge badge-inline pro py-2">
+                    Pro
+                  </span>
+                </a>
+                <a
+                  href="https://keenthemes.com/products/start-react-pro"
+                  class="btn btn-flex dashed-btn w-100 flex-stack d-flex justify-content-between  align-items-center p-4 mb-4"
+                >
+                <div class="d-flex flex-column align-items-start">
+                      <h3 class="text-black fs-6 fw-semibold mb-0">
+                        Start React Pro
+                      </h3>
+                      <div class="text-black-50 fs-7 fw-semibold">
+                        React, Typescript, Bootstrap 5
+                      </div>
+                    </div>
+                  <span class="badge badge-inline pro py-2">
+                    Pro
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
     </div>
+    </div>
+
+    <!--searchbar offcanvas  -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#topSearchOffCanvas" aria-controls="topSearchOffCanvas">Toggle top offcanvas</button>
+
+  <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="topSearchOffCanvas" aria-labelledby="topSearchOffCanvasLabel">
+    <div class="offcanvas-header container">
+      <h5 id="topSearchOffCanvasLabel">Offcanvas top</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+</div>
 
     <!-- Sidebar Apex Charts -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>

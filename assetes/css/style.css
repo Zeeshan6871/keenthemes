@@ -363,6 +363,10 @@ a {
     border:  1px dashed rgb(180, 179, 179);
 }
 
+.btn-close:hover{
+    -webkit-text-fill-color: #20d489 !important;
+}
+
 .dashed-btn.active{
     border: 1px dashed #2dc083;
     background: #e7f2eb;
