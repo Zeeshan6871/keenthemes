@@ -375,3 +375,11 @@ a {
 .dropdown-header{
     color: black;
 }
+
+.shop-goods .col {
+    padding: 5px;
+  }
+  .shop-goods img {
+    width: 100%;
+    border-radius: 8px;
+  }
