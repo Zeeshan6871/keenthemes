@@ -352,7 +352,7 @@ a {
 }
 
 .explore-body{
-    overflow: scroll;
+    overflow: scroll !important;
     overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: lightgrey transparent;
@@ -413,4 +413,10 @@ a {
     scrollbar-width: thin;
     scrollbar-color: var(--color-white) transparent;
     border-radius: 1rem;
+}
+
+
+
+.help-table:hover h2{
+    color: #2dc083;
 }
