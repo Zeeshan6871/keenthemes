@@ -123,6 +123,13 @@ a {
     width: 40% !important;
 }
 
+.w-30{
+    width: 30% !important;
+}
+.w-55{
+    width: 55px !important;
+}
+
 .btn-primary {
     background-color: var(--color-active);
     border: var(--color-active);
@@ -147,8 +154,10 @@ a {
     color: var(--color-white);
 }
 
+
+
 .text-hover:hover {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
 }
 
 .cursor-pointer {
@@ -298,6 +307,10 @@ a {
 .btn-info:hover {
     background-color: var(--color-purple);
     color: var(--color-white);
+}
+
+.btn-bg-light{
+    background-color: #f9f9f9;
 }
 
 .sidebar-main {
