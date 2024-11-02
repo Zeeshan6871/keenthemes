@@ -383,3 +383,21 @@ a {
     width: 100%;
     border-radius: 8px;
   }
+
+  .no-focus:focus {
+    outline: none;
+    box-shadow: none; /* Removes the default Bootstrap focus shadow */
+  }
+
+  .no-focus::placeholder{
+    color: #99A1B7 !important;
+  }
+  
+  .searchScroll {
+    height: 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-white) transparent;
+    border-radius: 1rem;
+}
