@@ -21,7 +21,7 @@
         <nav class="px-4 w-100" style="height: 30px">
           <div class="d-flex align-items-center justify-content-between px-4" style="height: 100%">
             <div class="d-flex">
-              <div class="btn menu-btn">
+              <div class="btn menu-btn ">
                 <i class="ri-grid-fill"></i>
               </div>
               <div>
@@ -906,16 +906,95 @@
         <div class="row px-5 h-100">
           <div class="col-xl-4 col d-flex">
             <div class="card mb-5 mb-xxl-8 flex-fill">
-              <div class="card-body h-100 pb-0 d-flex flex-column justify-content-between">
-                <h3 class=" text-center fs-3 fw-bold pt-5 lh-lg">
-                  Kickstart<br />
-                  Mobile Application
+              <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
+                <h3 class="card-title d-flex align-items-start flex-column">
+                  <span class="fw-bold  fs-4">Timeline</span>
+                  <span class="text-muted mt-2 fw-semibold fs-6">Updates &amp; notifications</span>
                 </h3>
-                <div class="text-center pt-7">
-                  <a href="#" class="btn btn-primary rounded-3 fw-bold fs-6 px-5 py-3">Create App</a>
+                <div class="card-toolbar dropdown">
+                  <button type="button" class="btn btn-md btn-icon bg-light-green btn-info" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ri-apps-line"></i>
+                  </button>
+
+                  <div class="dropdown-menu dropdown-menu-end rounded fs-6" style="
+                        width: 200px;
+                        height: auto;
+                        max-height: 400px;
+                        overflow-y: auto;
+                      " aria-labelledby="dropdownMenuButton1">
+                    <div class="dropdown-header px-3">
+                      <h6 class="fs-6  fw-bold mb-0">Manage</h6>
+                    </div>
+
+                    <div class="separator mb-2 opacity-75"></div>
+
+                    <div class="menu-item px-3">
+                      <a href="#" class="menu-link">Add User</a>
+                    </div>
+
+                    <div class="menu-item px-3">
+                      <a href="#" class="menu-link">Add Role</a>
+                    </div>
+
+                    <div class="menu-item px-3 dropdown">
+                      <a href="#" class="menu-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="menu-title">Add Group</span>
+                        <span class="menu-arrow"></span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-start py-2">
+                        <div class="menu-item px-3">
+                          <a href="#" class="menu-link">Admin Group</a>
+                        </div>
+                        <div class="menu-item px-3">
+                          <a href="#" class="menu-link">Staff Group</a>
+                        </div>
+                        <div class="menu-item px-3">
+                          <a href="#" class="menu-link">Member Group</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="menu-item px-3">
+                      <a href="#" class="menu-link">Reports</a>
+                    </div>
+
+                    <div class="separator my-2 opacity-75"></div>
+
+                    <div class="menu-item px-3">
+                      <div class="py-2">
+                        <a class="btn btn-primary fw-semibold btn-sm p-2" href="#">Create New</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <img src="https://preview.keenthemes.com/start/assets/media/illustrations/sigma-1/3.png" alt="img" />
               </div>
+                <div class="timeline">
+                  <div class="container1 left ms-0">
+                    <div class="content">
+                      <p>2017</p>
+                      <p>Lorem ipsum..</p>
+                    </div>
+                  </div>
+                  <div class="container1 right ">
+                    <div class="content">
+                      <p>2016</p>
+                      <p>Lorem ipsum..</p>
+                    </div>
+                  </div>
+                  <div class="container1 left ms-0">
+                    <div class="content">
+                      <p>2017</p>
+                      <p>Lorem ipsum..</p>
+                    </div>
+                  </div>
+                  <div class="container1 right ">
+                    <div class="content">
+                      <p>2016</p>
+                      <p>Lorem ipsum..</p>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
           <div class="col-xl-8 col d-flex">
@@ -2498,7 +2577,7 @@
 
                 <div class="d-flex flex-wrap align-items-center mb-7">
                   <div class="symbol me-4">
-                    <img src="assetes/images/sideBarProduct/img-15.jpg" alt="" class="mw-100" />
+                    <img src="assetes/images/sideBarProduct/img-14 (1).jpg" alt="" class="mw-100" />
                   </div>
                   <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
                     <a href="#" class="text-white fw-bold primary-text-hover fs-6">
@@ -2579,7 +2658,7 @@
 
 
   <!--Explore Sidebar  right -->
-  <div class="offcanvas offcanvas-end w-40 border-0" data-bs-scroll="true" tabindex="-1" id="offcanvasExplore"
+  <div class="offcanvas offcanvas-end w-100 w-md-36 border-0" data-bs-scroll="true" tabindex="-1" id="offcanvasExplore"
     aria-labelledby="offcanvasHelpLabel">
     <div class="card-header border-0 border-bottom p-4 d-flex justify-content-between">
       <h5 class="card-title fw-semibold text-black-50">
@@ -2692,7 +2771,7 @@
 
 
   <!--Help Sidebar  right -->
-  <div class="offcanvas offcanvas-end w-40" data-bs-scroll="true" tabindex="-1" id="offcanvasHelp"
+  <div class="offcanvas offcanvas-end w-100 w-md-36" data-bs-scroll="true" tabindex="-1" id="offcanvasHelp"
     aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="card-header border-0 border-bottom p-4 d-flex justify-content-between">
       <h5 class="card-title fw-semibold text-black-50">
