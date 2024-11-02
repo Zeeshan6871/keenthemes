@@ -67,6 +67,15 @@ a {
     height: 100px;
 }
 
+.header i{
+    padding: 3px 6px;
+}
+.header i:hover{
+    padding: 3px 6px;
+    background-color: #F9F2E7;
+    border-radius: 5px;
+}
+
 .menu-btn {
     display: flex;
     align-items: center;
