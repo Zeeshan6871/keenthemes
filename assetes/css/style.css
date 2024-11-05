@@ -139,6 +139,22 @@ a {
     width: 55px !important;
 }
 
+.w-35px{
+    width: 35px !important;
+}
+
+.mw-90{
+    width: 90% !important;
+}
+
+.message-received-bg{
+    background-color: #F6F1FC ;
+}
+
+.message-sent-bg{
+    background-color: #E4FFF4;
+}
+
 @media (min-width: 768px) { 
     .w-md-36 {
       width: 36% !important;
@@ -169,6 +185,14 @@ a {
     color: var(--color-white);
 }
 
+.btn-menu{
+    color: #99A1B7;
+}
+
+.btn-menu:hover{
+    color: #20d489;
+}
+
 
 
 .text-hover:hover {
@@ -193,10 +217,13 @@ a {
     font-weight: 500;
 }
 
-.bg-light-primary {
+.-light-primbgary {
     background-color: var(--color-primary);
 }
 
+.bg-green{
+    background-color: var(--color-active);
+}
 .mainPage .card {
     border: 1px solid var(--color-card-border);
 }
@@ -341,6 +368,10 @@ a {
     border-radius: var(--border-radius);
 }
 
+.primary-text-hover{
+    color: #1cb474;
+}
+
 .primary-text-hover:hover {
     color: var(--color-primary) !important;
 }
@@ -372,6 +403,7 @@ a {
     scrollbar-width: thin;
     scrollbar-color: lightgrey transparent;
 }
+
 
 .btn-explore{
     background-color: #5BB3FF;

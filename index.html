@@ -33,8 +33,53 @@
               <i class="ri-search-line cursor-pointer" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#topSearchOffCanvas" aria-controls="topSearchOffCanvas">
               </i>
-              <i class="ri-message-line cursor-pointer"></i>
-              <i class="ri-user-line cursor-pointer"></i>
+              <i class="ri-message-line cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#messagePanel"
+                aria-controls="messagePanel"></i>
+              <div>
+
+                <i class="ri-user-line cursor-pointer" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                <div class="dropdown-menu dropdown-menu-end rounded fs-6" data-popper-placement="bottom-end"
+                  style="--bs-dropdown-padding-y: 0px; max-width: 300px;">
+                  <div class="fw-semibold d-flex align-items-center text-white rounded-top"
+                    style="background-color: #4F0FA1;">
+                    <div class="m-3 bg-green p-1 rounded-3">
+                      <span class="d-flex ">
+                        <img alt="Logo" src="./assetes/images/searchAvatars/011-boy-5.svg" class="w-35px">
+                      </span>
+                    </div>
+                    <div>
+                      <span class="fw-bold fs-4">Hello, James</span>
+                      <span class="fw-semibold fs-7 d-block">CRM Product Designer</span>
+                    </div>
+                  </div>
+
+                  <!-- Menu Items -->
+                  <div class="row row-cols-2 g-0 p-2 ">
+                    <a href="/start-html-pro/profile/overview.html"
+                      class="col text-center py-4 btn btn-menu border-bottom border-end rounded-0">
+                      <i class="ri-layout-grid-fill fs-1"></i>
+                      <span class="fw-bold d-block pt-3 fs-5">My Profile</span>
+                    </a>
+                    <a href="/start-html-pro/profile/account.html"
+                      class="col text-center py-4 btn btn-menu border-bottom rounded-0">
+                      <i class="ri-equalizer-2-line fs-1"></i>
+                      <span class="fw-bold d-block pt-3 fs-5">Settings</span>
+                    </a>
+                    <a href="/start-html-pro/profile/settings.html"
+                      class="col text-center py-4 btn btn-menu border-end rounded-0">
+                      <i class="ri-money-euro-circle-fill fs-1"></i>
+                      <span class="fw-bold d-block pt-3 fs-5">Subscriptions</span>
+                    </a>
+                    <a href="/start-html-pro/general/login.html" class="col text-center py-4 btn btn-menu rounded-0">
+                      <i class="ri-logout-box-line fs-1"></i>
+                      <span class="fw-bold d-block pt-3 fs-5">Sign Out</span>
+                    </a>
+                  </div>
+
+
+                </div>
+              </div>
               <div class="position-relative cursor-pointer bg-light-red p-1 px-2 rounded-3">
                 <span class="text-danger h-auto p-1">3</span>
                 <span class="pulse-ring border-danger"></span>
@@ -1500,10 +1545,11 @@
             <ul class="fw-semibold text-decoration-none list-unstyled d-flex">
               <li><a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a></li>
               <li><a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a></li>
-              <li><a href="https://keenthemes.com/products/start-html-pro" target="_blank" class="menu-link px-2">Purchase</a></li>
+              <li><a href="https://keenthemes.com/products/start-html-pro" target="_blank"
+                  class="menu-link px-2">Purchase</a></li>
             </ul>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -3183,6 +3229,171 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!--Messagebar Offcanvas -->
+  <div class="offcanvas offcanvas-end w-100 w-md-36" data-bs-scroll="true" tabindex="-1" id="messagePanel"
+    aria-labelledby="messagePanelLabel">
+    <div class="card-header border-0 border-bottom p-4 d-flex justify-content-between">
+      <div>
+
+        <h5 class="card-title fw-semibold text-hover text-black">
+          Brian Cox
+        </h5>
+        <div class="d-flex align-items-center gap-1 mt-2 text-black-50 fw-semibold">
+          <span class="badge rounded-circle bg-info" style="width: 12px; height: 12px; display: inline-block;"></span>
+          Active
+        </div>
+      </div>
+      <div class="card-toolbar">
+        <button type="button" class="btn btn-close btn-sm btn-icon explore-btn-dismiss me-n5"
+          data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
+      </div>
+    </div>
+    <div class="explore-body px-5 py-4">
+      <!-- Messages -->
+      <!-- Message in -->
+      <div class="d-flex justify-content-start mb-5">
+        <div class="d-flex flex-column align-items-start">
+          <div class="d-flex align-items-center mb-1">
+            <div class="w-35px  rounded-circle">
+              <img alt="Pic" class="img-fluid rounded-circle" src="./assetes/images/messagebar/300-25.jpg">
+            </div>
+            <div class="ms-3">
+              <a href="#" class="fs-5 fw-bold text-dark">Brian Cox</a>
+              <span class="text-muted fs-7">2 mins</span>
+            </div>
+          </div>
+          <div class="p-3 rounded message-received-bg mw-90 text-start">
+            How likely are you to recommend our company to your friends and family?
+          </div>
+        </div>
+      </div>
+      <!-- Message out -->
+      <div class="d-flex justify-content-end mb-5">
+        <div class="d-flex flex-column align-items-end">
+          <div class="d-flex align-items-center mb-1">
+            <div class="me-3">
+              <span class="text-muted fs-7">5 mins</span>
+              <a href="#" class="fs-5 fw-bold text-dark ms-1">You</a>
+            </div>
+            <div class="w-35px rounded-circle">
+              <img alt="Pic" class="img-fluid rounded-circle" src="./assetes/images/messagebar/300-1.jpg">
+            </div>
+          </div>
+          <div class="p-3 rounded message-sent-bg mw-90 text-end">
+            Hey there, we’re just writing to let you know that you’ve been subscribed to a repository on GitHub.
+          </div>
+        </div>
+      </div>
+      <!-- Message in -->
+      <div class="d-flex justify-content-start mb-5">
+        <div class="d-flex flex-column align-items-start">
+          <div class="d-flex align-items-center">
+            <div class="w-35px rounded-circle">
+              <img alt="Pic" class="img-fluid rounded-circle" src="./assetes/images/messagebar/300-25.jpg">
+            </div>
+            <div class="ms-3">
+              <a href="#" class="fs-5 fw-bold text-dark">Brian Cox</a>
+              <span class="text-muted fs-7">1 Hour</span>
+            </div>
+          </div>
+          <div class="p-3 rounded message-received-bg mw-90 text-start">
+            Ok, Understood!
+          </div>
+        </div>
+      </div>
+      <!-- Message out -->
+      <div class="d-flex justify-content-end mb-5">
+        <div class="d-flex flex-column align-items-end">
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+              <span class="text-muted fs-7">2 Hours</span>
+              <a href="#" class="fs-5 fw-bold text-dark ms-1">You</a>
+            </div>
+            <div class="w-35px rounded-circle">
+              <img alt="Pic" class="img-fluid rounded-circle" src="./assetes/images/messagebar/300-1.jpg">
+            </div>
+          </div>
+          <div class="p-3 rounded message-sent-bg mw-90 text-end">
+            You’ll receive notifications for all issues, pull requests!
+          </div>
+        </div>
+      </div>
+      <!-- Message in -->
+      <div class="d-flex justify-content-start mb-5">
+        <div class="d-flex flex-column align-items-start">
+          <div class="d-flex align-items-center">
+            <div class=" w-35px rounded-circle">
+              <img alt="Pic" class="img-fluid rounded-circle" src="./assetes/images/messagebar/300-25.jpg">
+            </div>
+            <div class="ms-3">
+              <a href="#" class="fs-5 fw-bold text-dark">Brian Cox</a>
+              <span class="text-muted fs-7">3 Hours</span>
+            </div>
+          </div>
+          <div class="p-3 rounded message-received-bg mw-90 text-start">
+            You can unwatch this repository immediately by clicking here: <a href="https://keenthemes.com"
+              class="text-decoration-none primary-text-hover">Keenthemes.com</a>
+          </div>
+        </div>
+      </div>
+      <!-- Message out -->
+      <div class="d-flex justify-content-end mb-5">
+        <div class="d-flex flex-column align-items-end">
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+              <span class="text-muted fs-7">4 Hours</span>
+              <a href="#" class="fs-5 fw-bold text-dark ms-1">You</a>
+            </div>
+            <div class=" w-35px  rounded-circle">
+              <img alt="Pic" class="img-fluid rounded-circle" src="./assetes/images/messagebar/300-1.jpg">
+            </div>
+          </div>
+          <div class="p-3 rounded message-sent-bg mw-90 text-end">
+            Most purchased Business courses during this sale!
+          </div>
+        </div>
+      </div>
+      <!-- Message in -->
+      <div class="d-flex justify-content-start mb-5">
+        <div class="d-flex flex-column align-items-start">
+          <div class="d-flex align-items-center">
+            <div class=" w-35px  rounded-circle">
+              <img alt="Pic" class="img-fluid rounded-circle" src="./assetes/images/messagebar/300-25.jpg">
+            </div>
+            <div class="ms-3">
+              <a href="#" class="fs-5 fw-bold text-dark">Brian Cox</a>
+              <span class="text-muted fs-7">5 Hours</span>
+            </div>
+          </div>
+          <div class="p-3 rounded message-received-bg mw-90 text-start">
+            Company BBQ to celebrate the last quarter achievements and goals. Food and drinks provided.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-footer py-4 px-5 border-top">
+      <textarea class="form-control mb-3 border-0 no-focus" rows="1" placeholder="Type a message"></textarea>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <button class="btn btn-sm btn-icon btn-outline-secondary me-1" type="button" data-bs-toggle="tooltip"
+            title="Coming soon">
+            <i class="ri-attachment-2"></i>
+          </button>
+          <button class="btn btn-sm btn-icon btn-outline-secondary me-1" type="button" data-bs-toggle="tooltip"
+            title="Coming soon">
+            <i class="ri-upload-cloud-2-line"></i>
+          </button>
+        </div>
+        <button class="btn btn-lg btn-primary" type="button">Send</button>
+      </div>
+    </div>
+
+
   </div>
 
   <!-- Sidebar Apex Charts -->
